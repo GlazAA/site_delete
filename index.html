@@ -13,11 +13,13 @@
         <div class="container">
             <div class="header-inner">
                 <div class="logo">
-                    <a href="index.html">Brand<span>Schutz</span></a>
+                    <a href="index.html">
+                        <img src="images/brand_icon.png" alt="BrandSchutz" class="logo-img">
+                    </a>
                 </div>
                 <nav class="main-nav">
                     <ul>
-                        <li><a href="company.html">Компания</a></li>
+                        <li><a href="company.html">О Компании</a></li>
                         <li><a href="solutions.html">Решения</a></li>
                         <li><a href="systems.html">Системы</a></li>
                         <li><a href="services.html">Услуги</a></li>
@@ -31,80 +33,36 @@
         </div>
     </header>
 
-    <!-- Герой-секция -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Противопожарная защита — это защита окружающей среды</h1>
-                <p class="subtitle">Инновационные решения для складов, ЦОД и спецхранилищ</p>
-                <a href="#solutions" class="btn btn-primary">Наши решения</a>
-            </div>
-        </div>
-        <div class="hero-overlay"></div>
-    </section>
+    <!-- Главная страница с уведомлением о реконструкции -->
+    <main class="main-content">
+        <section class="reconstruction">
+            <div class="container">
+                <div class="reconstruction-content">
+                    <h1>Противопожарная защита – это защита окружающей среды</h1>
+                    
+                    <img src="images/basis_main_page.png" alt="Противопожарные решения" class="main-image">
+                    
+                    <div class="text-content">
+                        <p>Наша специализация - техническая противопожарная защита крупных морозильных, высокостеллажных складов, ЦОД и спецхранилищ. Мы разрабатываем индивидуальные решения с использованием наших собственных продуктов, систем ведущих производителей в области обнаружения и предотвращения пожаров. Предлагаем услуги по проектированию, поставке, монтажу и техническому обслуживанию оборудования систем обнаружения и предотвращения пожаров.</p>
+                        
+                        <p>Наша компания - это инновации, качество и точность, а значит, лучшее решение в области противопожарной защиты.</p>
+                    </div>
+                    
+                    <div class="notice-box">
+                        <p><strong>САЙТ НАХОДИТСЯ НА РЕКОНСТРУКЦИИ.</strong><br>
+                        Приносим свои извинения за неудобство. Мы с удовольствием познакомимся с вами в нашем офисе в Москве или онлайн.</p>
+                    </div>
 
-    <!-- О компании -->
-    <section class="about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-content">
-                    <h2>Наша специализация</h2>
-                    <p>Техническая противопожарная защита крупных морозильных, высокостеллажных складов, ЦОД и спецхранилищ. Мы разрабатываем индивидуальные решения с использованием наших собственных продуктов и систем ведущих производителей.</p>
-                    <div class="features">
-                        <div class="feature-item">
-                            <i class="fas fa-fire-extinguisher"></i>
-                            <h3>Проектирование</h3>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-truck"></i>
-                            <h3>Поставка</h3>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-tools"></i>
-                            <h3>Монтаж</h3>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-cogs"></i>
-                            <h3>Обслуживание</h3>
-                        </div>
+                    <div class="contact-form">
+                        <h3>Задать вопрос</h3>
+                        <form onsubmit="redirectToGoogleForm(event)">
+                            <button type="submit" class="btn btn-primary">Задать вопрос</button>
+                        </form>
                     </div>
-                </div>
-                <div class="about-image">
-                    <img src="images/placeholder-about.jpg" alt="О компании BrandSchutz">
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Решения -->
-    <section id="solutions" class="solutions">
-        <div class="container">
-            <h2>Наши решения</h2>
-            <div class="solutions-grid">
-                <div class="solution-card">
-                    <div class="solution-icon">
-                        <i class="fas fa-warehouse"></i>
-                    </div>
-                    <h3>Склады</h3>
-                    <p>Комплексные решения для складских помещений любого типа и размера.</p>
-                </div>
-                <div class="solution-card">
-                    <div class="solution-icon">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <h3>ЦОД</h3>
-                    <p>Специализированные системы защиты дата-центров и серверных помещений.</p>
-                </div>
-                <div class="solution-card">
-                    <div class="solution-icon">
-                        <i class="fas fa-industry"></i>
-                    </div>
-                    <h3>Производства</h3>
-                    <p>Защита промышленных объектов с учетом специфики производства.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Футер -->
     <footer class="footer">
@@ -137,6 +95,12 @@
         </div>
     </footer>
 
+    <script>
+        function redirectToGoogleForm(event) {
+            event.preventDefault();
+            window.open('https://forms.gle/dhABfPrJhrC2wg749', '_blank');
+        }
+    </script>
     <script src="js/main.js"></script>
 </body>
 </html>
