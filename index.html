@@ -6,6 +6,18 @@
     <title>BrandSchutz - Противопожарные решения</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .content-block {
+            margin-bottom: 40px;
+        }
+        .footer-divider {
+            margin: 50px 0;
+            border: 0;
+            height: 1px;
+            background-color: #ddd;
+        }
+    </style>
+
 </head>
 <body>
     <!-- Шапка сайта -->
@@ -35,37 +47,36 @@
 
     <!-- Главный контент -->
     <main class="main-content">
-        <!-- Герой-секция с текстом поверх изображения -->
-        <section class="hero-section">
-            
-            
-           
-            <div class="hero-text-content" style="position: relative; max-width: 800px;">
-                <h1 style="margin-left: 50px; color: white; text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);">Противопожарная защита – это защита окружающей среды</h1>
-                
-                <div class="hero-description" style="margin-left: 50px; background-color: rgba(240, 240, 240, 0.7); padding: 25px; border-radius: 5px; max-width: 90%;">
-                    <p style="color: #333; margin-bottom: 15px; line-height: 1.6;">Наша специализация - техническая противопожарная защита крупных морозильных, высокостеллажных складов, ЦОД и спецхранилищ.</p>
-                    <p style="color: #333; margin-bottom: 15px; line-height: 1.6;">Мы разрабатываем индивидуальные решения с использованием наших собственных продуктов, систем ведущих производителей в области обнаружения и предотвращения пожаров. Предлагаем услуги по проектированию, поставке, монтажу и техническому обслуживанию оборудования систем обнаружения и предотвращения пожаров.</p>
-                    <p style="color: #333; line-height: 1.6;">Наша компания - это инновации, качество и точность, а значит, лучшее решение в области противопожарной защиты.</p>
-                </div>
+        <div class="container">
+            <!-- Блок с уведомлением -->
+            <div class="content-block" style="margin-top: 60px; margin-bottom: 50px;">
+                <p style="font-size: 1.2rem; font-weight: bold; margin-bottom: 25px;">САЙТ НАХОДИТСЯ НА РЕКОНСТРУКЦИИ.</p>
+                <p style="margin-bottom: 40px;">Приносим свои извинения за неудобство. Мы с удовольствием познакомимся с вами в нашем офисе в Москве или онлайн.</p>
             </div>
-           
-        </section>
 
-        <!-- Секция с уведомлением о реконструкции -->
-        <section class="reconstruction-section">
-            <div class="container">
-                <div class="notice-box">
-                    <p><strong>САЙТ НАХОДИТСЯ НА РЕКОНСТРУКЦИИ.</strong><br>
-                    Приносим свои извинения за неудобство. Мы с удовольствием познакомимся с вами в нашем офисе в Москве или онлайн.</p>
-                    <p>При нажатии на кнопку у вас откроется Google Форма. Страница может запросить авторизацию, это нормально.</p>
-                </div>
-
-                <div class="contact-form">
-                    <button type="submit" class="btn btn-primary" onclick="redirectToGoogleForm(event)">Задать вопрос</button>
-                </div>
+            <!-- Блок специализации -->
+            <div class="content-block" style="margin-bottom: 45px;">
+                <p style="font-weight: 500; margin-bottom: 25px;">Наша специализация – автоматические системы предотвращения пожара на объектах.</p>
+                <p style="margin-bottom: 25px;">Более 15 лет мы успешно реализуем проекты в этих направлениях. Благодаря этому опыту мы понимаем, что каждый объект уникален, поэтому каждая наша система создается индивидуально — с учетом специфики объекта и требований заказчика.</p>
             </div>
-        </section>
+
+            <!-- Блок о компании -->
+            <div class="content-block" style="margin-bottom: 45px;">
+                <p style="margin-bottom: 25px;">Компания Brand Shutz разрабатывает и производит автоматические системы предотвращения пожара под торговой маркой FIREX®. Данные системы предназначены для защиты объектов повышенной важности, включая автоматизированные высотные склады, архивные комплексы, хранилища ценностей, декораций, банковские сейфы и дата-центры (ЦОД).</p>
+                <p>Мы предлагаем Вам комплексный подход к организации системы предотвращения пожаров: проектирование, поставку оборудования, монтаж и техническое обслуживание.</p>
+            </div>
+
+            <!-- Разделитель -->
+            <hr class="footer-divider">
+
+            <!-- Блок формы -->
+            <div class="content-block" style="margin-bottom: 50px; text-align: center;">
+                <p style="margin-bottom: 30px;">При нажатии на кнопку у вас откроется Google Форма. Страница может запросить авторизацию, это нормально.</p>
+                <button class="btn btn-primary" onclick="window.open('https://forms.gle/dhABfPrJhrC2wg749', '_blank'); return false;" style="padding: 12px 30px; font-size: 1rem;">
+                    Задать вопрос
+                </button>
+            </div>
+        </div>
     </main>
 
       <!-- Футер -->
