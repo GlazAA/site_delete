@@ -33,39 +33,43 @@
         </div>
     </header>
 
-    <!-- Главная страница с уведомлением о реконструкции -->
+    <!-- Главный контент -->
     <main class="main-content">
-        <section class="reconstruction">
-            <div class="container">
-                <div class="reconstruction-content">
+        <!-- Герой-секция с текстом поверх изображения -->
+        <section class="hero-section">
+            
+            
+           
+                <div class="hero-text-content">
                     <h1>Противопожарная защита – это защита окружающей среды</h1>
                     
-                    <img src="images/basis_main_page.png" alt="Противопожарные решения" class="main-image">
-                    
-                    <div class="text-content">
-                        <p>Наша специализация - техническая противопожарная защита крупных морозильных, высокостеллажных складов, ЦОД и спецхранилищ. Мы разрабатываем индивидуальные решения с использованием наших собственных продуктов, систем ведущих производителей в области обнаружения и предотвращения пожаров. Предлагаем услуги по проектированию, поставке, монтажу и техническому обслуживанию оборудования систем обнаружения и предотвращения пожаров.</p>
-                        
+                    <div class="hero-description">
+                        <p>Наша специализация - техническая противопожарная защита крупных морозильных, высокостеллажных складов, ЦОД и спецхранилищ.</p>
+                        <p>Мы разрабатываем индивидуальные решения с использованием наших собственных продуктов, систем ведущих производителей в области обнаружения и предотвращения пожаров. Предлагаем услуги по проектированию, поставке, монтажу и техническому обслуживанию оборудования систем обнаружения и предотвращения пожаров.</p>
                         <p>Наша компания - это инновации, качество и точность, а значит, лучшее решение в области противопожарной защиты.</p>
                     </div>
-                    
-                    <div class="notice-box">
-                        <p><strong>САЙТ НАХОДИТСЯ НА РЕКОНСТРУКЦИИ.</strong><br>
-                        Приносим свои извинения за неудобство. Мы с удовольствием познакомимся с вами в нашем офисе в Москве или онлайн.</p>
-                    </div>
+                </div>
+           
+        </section>
 
-                    <div class="contact-form">
-                        <h3>Задать вопрос</h3>
-                        <form onsubmit="redirectToGoogleForm(event)">
-                            <button type="submit" class="btn btn-primary">Задать вопрос</button>
-                        </form>
-                    </div>
+        <!-- Секция с уведомлением о реконструкции -->
+        <section class="reconstruction-section">
+            <div class="container">
+                <div class="notice-box">
+                    <p><strong>САЙТ НАХОДИТСЯ НА РЕКОНСТРУКЦИИ.</strong><br>
+                    Приносим свои извинения за неудобство. Мы с удовольствием познакомимся с вами в нашем офисе в Москве или онлайн.</p>
+                    <p>При нажатии на кнопку у вас откроется Google Форма. Страница может запросить авторизацию, это нормально.</p>
+                </div>
+
+                <div class="contact-form">
+                    <button type="submit" class="btn btn-primary" onclick="redirectToGoogleForm(event)">Задать вопрос</button>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Футер -->
-    <footer class="footer">
+      <!-- Футер -->
+      <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-info">
@@ -90,17 +94,10 @@
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 BrandSchutz. Все права защищены.</p>
-                <p class="reconstruction-notice">Сайт находится на реконструкции. Приносим извинения за временные неудобства.</p>
             </div>
         </div>
     </footer>
 
-    <script>
-        function redirectToGoogleForm(event) {
-            event.preventDefault();
-            window.open('https://forms.gle/dhABfPrJhrC2wg749', '_blank');
-        }
-    </script>
     <script src="js/main.js"></script>
 </body>
 </html>
